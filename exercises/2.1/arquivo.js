@@ -1,7 +1,6 @@
 let student = "euMesmo";
 let studentSkills = 10;
-javascript-updates
+javascript - updates;
 //Vou ter muito sucesso na programação!
-=======
-master
+master;
 console.log("Sucesso!");
