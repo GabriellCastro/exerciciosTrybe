@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usando o DOM</title>
+  </head>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <h4 id="subtitle">Subtítulo</h4>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph">Segundo parágrafo!</p>
+    <p class="textoMain">Lorem Ipsum is simply</p>
+    <p class="textoMain">Lorem Ipsum is simply</p>
+    <p class="textoMain">Lorem Ipsum is simply</p>
+    <p class="textoMain">Lorem Ipsum is simply</p>
+
+    <script>
+      var paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").style.color = "orange";
+      document.getElementById("page-title").innerText = "Harry potter";
+      var textop = document.getElementsByClassName("textoMain");
+      for (let i = 0; i < textop.length; i += 1) {
+        textop[i].innerText = "Gabriel Castro";
+      }
+      document.querySelectorAll("#subtitle")[0].innerText =
+        "Subtítulo alterado com querySelectorAll";
+    </script>
+  </body>
+</html>
