@@ -11,7 +11,7 @@
 
     <script>
       let listaDeComidas = [
-        "Arros com feijão",
+        "Arros com feijão e ovo",
         "Arros com feijão",
         "Arros com feijão",
         "Arros com feijão",
@@ -22,7 +22,16 @@
         let comida = listaDeComidas[index];
         let comidaListItem = document.createElement("li");
         comidaListItem.innerText = comida;
+        comidaListItem.className = "comidas-list";
         comidaslist.appendChild(comidaListItem);
+      }
+
+      let comidasListItems = document.querySelectorAll(".comidas-list");
+      for (let index = 0; index < comidasListItems.length; index += 1) {
+        let element = comidasListItems[index];
+        if (element.innerText.includes("ovo")) {
+          comidaslist.removeChild(element);
+        }
       }
     </script>
   </body>
