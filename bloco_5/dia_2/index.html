@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com elementos Próximo</title>
+  </head>
+  <body>
+    <h1>comidas</h1>
+    <ul class="comidas"></ul>
+
+    <script>
+      let listaDeComidas = [
+        "Arros com feijão",
+        "Arros com feijão",
+        "Arros com feijão",
+        "Arros com feijão",
+        "Arros com feijão",
+      ];
+      let comidaslist = document.querySelector(".comidas");
+      for (let index = 0; index < listaDeComidas.length; index += 1) {
+        let comida = listaDeComidas[index];
+        let comidaListItem = document.createElement("li");
+        comidaListItem.innerText = comida;
+        comidaslist.appendChild(comidaListItem);
+      }
+    </script>
+  </body>
+</html>
