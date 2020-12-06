@@ -81,8 +81,26 @@ createDezDaysList();
 function holidays() {
   const buttonHoliday = document.querySelector(".buttons-container");
   const createButton = document.createElement("button");
+
   createButton.id = "btn-holiday";
   createButton.innerText = "Feriados";
   buttonHoliday.appendChild(createButton);
 }
 holidays("Feriados");
+
+//Exercício 3
+function clickHoliday() {
+  const buttonEvent = document.querySelector("#btn-holiday");
+  const clickHoliday = document.querySelectorAll(".holiday");
+  buttonEvent.addEventListener("click", backgroundHoliday);
+  function backgroundHoliday() {
+    for (let index = 0; index < clickHoliday.length; index += 1) {
+      if (clickHoliday[index].style.backgroundColor === "green") {
+        clickHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+      } else {
+        clickHoliday[index].style.backgroundColor = "green";
+      }
+    }
+  }
+}
+clickHoliday();
