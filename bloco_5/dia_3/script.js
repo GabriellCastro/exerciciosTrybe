@@ -97,8 +97,10 @@ function clickHoliday() {
     for (let index = 0; index < clickHoliday.length; index += 1) {
       if (clickHoliday[index].style.backgroundColor === "green") {
         clickHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+        clickHoliday[index].style.color = "#777";
       } else {
         clickHoliday[index].style.backgroundColor = "green";
+        clickHoliday[index].style.color = "white";
       }
     }
   }
