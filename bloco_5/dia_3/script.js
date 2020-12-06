@@ -65,7 +65,12 @@ function createDezDaysList() {
 
     daysListItem.innerHTML = dayNumber;
     daysListItem.className = "day";
-
+    if (index === 25 || index === 26 || index === 32) {
+      daysListItem.className += " holiday";
+    }
+    if (index === 5 || index === 12 || index === 26) {
+      daysListItem.className += " friday";
+    }
     dezDaysList.appendChild(daysListItem);
   }
 }
