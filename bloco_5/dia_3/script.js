@@ -21,6 +21,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
+//Exercício 1
 function createDezDaysList() {
   const dezDays = [
     29,
@@ -75,3 +76,13 @@ function createDezDaysList() {
   }
 }
 createDezDaysList();
+
+//Exercício 2
+function holidays() {
+  const buttonHoliday = document.querySelector(".buttons-container");
+  const createButton = document.createElement("button");
+  createButton.id = "btn-holiday";
+  createButton.innerText = "Feriados";
+  buttonHoliday.appendChild(createButton);
+}
+holidays("Feriados");
