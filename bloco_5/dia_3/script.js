@@ -79,12 +79,12 @@ createDezDaysList();
 
 //Exercício 2
 function holidays() {
-  const buttonHoliday = document.querySelector(".buttons-container");
+  const divDadHolidays = document.querySelector(".buttons-container");
   const createButton = document.createElement("button");
 
   createButton.id = "btn-holiday";
   createButton.innerText = "Feriados";
-  buttonHoliday.appendChild(createButton);
+  divDadHolidays.appendChild(createButton);
 }
 holidays("Feriados");
 
@@ -106,3 +106,14 @@ function clickHoliday() {
   }
 }
 clickHoliday();
+
+//Exercícios 4
+function fridays() {
+  const divDadFridays = document.querySelector(".buttons-container");
+  const createButton = document.createElement("button");
+
+  createButton.id = "btn-friday";
+  createButton.innerHTML = "Sexta-feira";
+  divDadFridays.appendChild(createButton);
+}
+fridays("Sexta-feira");
