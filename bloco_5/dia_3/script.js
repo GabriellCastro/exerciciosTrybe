@@ -18,7 +18,6 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   }
 }
-
 createDaysOfTheWeek();
 
 //Exercício 1
@@ -117,3 +116,22 @@ function fridays() {
   divDadFridays.appendChild(createButton);
 }
 fridays("Sexta-feira");
+
+//Exercícios 5
+function clickFriday() {
+  const buttonEvent = document.querySelector("#btn-friday");
+  const clickFriday = document.querySelectorAll(".friday");
+  buttonEvent.addEventListener("click", backgroundFriday);
+  function backgroundFriday() {
+    for (let index = 0; index < clickFriday.length; index += 1) {
+      if (clickFriday[index].style.backgroundColor === "red") {
+        clickFriday[index].style.backgroundColor = "rgb(238,238,238)";
+        clickFriday[index].style.color = "#777";
+      } else {
+        clickFriday[index].style.backgroundColor = "red";
+        clickFriday[index].style.color = "white";
+      }
+    }
+  }
+}
+clickFriday();
