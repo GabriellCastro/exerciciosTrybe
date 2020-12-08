@@ -153,3 +153,12 @@ function mouseZoomEffect() {
   }
 }
 mouseZoomEffect();
+
+//Exercício 7
+function addTask(task) {
+  const spanTask = document.createElement("span");
+  const divTaskDad = document.querySelector(".my-tasks");
+  spanTask.innerText = task;
+  divTaskDad.appendChild(spanTask);
+}
+addTask("cozinhar");
