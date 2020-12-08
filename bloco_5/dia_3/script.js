@@ -161,4 +161,14 @@ function addTask(task) {
   spanTask.innerText = task;
   divTaskDad.appendChild(spanTask);
 }
-addTask("cozinhar");
+addTask("comida");
+
+//Exercício 8
+function ColorTask(color) {
+  const addDivTask = document.createElement("div");
+  const divTask = document.querySelector(".my-task");
+  divTaskDad.className = "task";
+  divTaskDad.style.backgroundColor = color;
+  divTaskDad.appendChild(addDivTask);
+}
+ColorTask("black");
