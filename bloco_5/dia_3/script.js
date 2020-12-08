@@ -106,7 +106,7 @@ function clickHoliday() {
 }
 clickHoliday();
 
-//Exercícios 4
+//Exercício 4
 function fridays() {
   const divDadFridays = document.querySelector(".buttons-container");
   const createButton = document.createElement("button");
@@ -135,3 +135,21 @@ function clickFriday() {
   }
 }
 clickFriday();
+
+//Exercício 6
+function zoomEffectInput(event) {
+  event.target.style.transform = "scale(2)";
+  event.target.style.transition = "0.5s";
+}
+function zoomEffectExit(event) {
+  event.target.style.transform = "scale(1)";
+  event.target.style.transition = "0.5s";
+}
+function mouseZoomEffect() {
+  const day = document.querySelectorAll(".day");
+  for (let index = 0; index < day.length; index += 1) {
+    day[index].addEventListener("mouseover", zoomEffectInput);
+    day[index].addEventListener("mouseout", zoomEffectExit);
+  }
+}
+mouseZoomEffect();
