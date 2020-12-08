@@ -107,12 +107,12 @@ function clickHoliday() {
 clickHoliday();
 
 //Exercício 4
-function fridays() {
+function fridays(str) {
   const divDadFridays = document.querySelector(".buttons-container");
   const createButton = document.createElement("button");
 
   createButton.id = "btn-friday";
-  createButton.innerHTML = "Sexta-feira";
+  createButton.innerText = str;
   divDadFridays.appendChild(createButton);
 }
 fridays("Sexta-feira");
@@ -167,8 +167,8 @@ addTask("comida");
 function ColorTask(color) {
   const addDivTask = document.createElement("div");
   const divTask = document.querySelector(".my-task");
-  divTaskDad.className = "task";
-  divTaskDad.style.backgroundColor = color;
-  divTaskDad.appendChild(addDivTask);
+  addDivTask.className = "task";
+  addDivTask.style.backgroundColor = color;
+  divTask.appendChild(addDivTask);
 }
 ColorTask("black");
