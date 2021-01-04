@@ -164,11 +164,11 @@ function addTask(task) {
 addTask("comida");
 
 //Exercício 8
-function ColorTask(color) {
+function colorTask(color) {
   const addDivTask = document.createElement("div");
   const divTask = document.querySelector(".my-task");
   addDivTask.className = "task";
   addDivTask.style.backgroundColor = color;
   divTask.appendChild(addDivTask);
 }
-ColorTask("black");
+colorTask("black");
