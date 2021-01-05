@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Formulário</h1>
+  </header>
+  <form action="" method="GET">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="name-input">Nome:
+        <input type="text" name="name" id="name-input" placeholder="Digite seu nome" maxlength="40" />
+      </label>
+      <br />
+      <label for="email-input">E-mail:
+        <input type="email" name="email" id="email-input" placeholder="Digite seu e-mail" maxlength="50" />
+      </label>
+      <br />
+      <label for="input-cpf">CPF:
+        <input type="text" name="cpf" id="cpf-input" placeholder="Digite seu CPF" maxlength="11" />
+      </label>
+      <br />
+      <label for="endereco-input">Endereço:
+        <input type="text" name="endereco" id="endereco-input" placeholder="Digite seu endereço" maxlength="200" />
+      </label>
+      <br>
+      <label for="cidade-input">Cidade:
+        <input type="text" name="cidade" id="cidade-input" placeholder="Digite sua cidade" maxlength="28" />
+      </label>
+      <br />
+      <label for="estado-input">Estado:
+        <select name="estado" id="estado-input" required></select>
+      </label>
+      <br />
+
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Último Emprego</legend>
+      <label for="resumo-cv">Resumo do currículo:
+        <br>
+        <textarea name="resumo" id="resumo-cv" cols="30" rows="5" maxlength="1000" placeholder="Fale bem brevemente sobre seu último emprego aqui: "></textarea>
+      </label>
+      <br>
+      <label for="cargo-input">Cargo:
+        <input type="text" name="cargo" id="cargo-input" placeholder="Digite seu cargo" maxlength="40" />
+      </label>
+      <br>
+      <label for="data-input">Data de início:
+        <input type="date" name="data" id="data-input" required/>
+      </label>
+    </fieldset>
+    <button type="reset">Cancelar</button>
+    <button type="submit">Enviar</button>
+  </form>
+  <main>
+    <div id="container-cv"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
