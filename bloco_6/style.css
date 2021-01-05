@@ -1,6 +1,13 @@
+main {
+  max-width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 fieldset {
   background-color: #eeeeee;
   border: 1px solid  #6610f2;
+  border-radius: 5px;
 }
 
 legend {
@@ -11,11 +18,13 @@ legend {
 
 input {
   border: 1px solid  #6610f2;
+  border-radius: 2px;
   margin: 5px;
 }
 
 select {
   border: 1px solid  #6610f2;
+  border-radius: 2px;
 }
 
 h1 {
@@ -41,5 +50,5 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
   

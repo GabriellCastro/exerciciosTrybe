@@ -6,68 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formulario</title>
   <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
-  <header>
-    <h1>Formulário</h1>
-  </header>
-  <form action="" method="GET">
-    <fieldset >
-      <legend>Dados Pessoais</legend>
-      <label for="name-input" class="form-label">Nome:
-        <input type="text" name="name" id="name-input" placeholder="Digite seu nome" maxlength="40" />
-      </label>
-      <br />
-      <label for="email-input" class="form-label">E-mail:
-        <input type="email" name="email" id="email-input" placeholder="Digite seu e-mail" maxlength="50" />
-      </label>
-      <br />
-      <label for="input-cpf" class="form-label">CPF:
-        <input type="text" name="cpf" id="cpf-input" placeholder="Digite seu CPF" maxlength="11" />
-      </label>
-      <br />
-      <label for="endereco-input" class="form-label">Endereço:
-        <input type="text" name="endereco" id="endereco-input" placeholder="Digite seu endereço" maxlength="200" />
-      </label>
-      <br>
-      <label for="cidade-input" class="form-label">Cidade:
-        <input type="text" name="cidade" id="cidade-input" placeholder="Digite sua cidade" maxlength="28" />
-      </label>
-      <br />
-      <label for="estado-input" class="form-label">Estado:
-        <select name="estado" id="estado-input" required></select>
-      </label>
-      <br />
-      <label for="house" class="form-check">Tipo:
-        <input name="house" type="radio" required>Casa
-        <input name="house" type="radio">Apartamento
-      </label>
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend>Último Emprego</legend>
-      <label for="resumo-cv">Resumo do currículo:
-        <br>
-        <textarea name="resumo" id="resumo-cv" cols="30" rows="5" maxlength="1000" placeholder="Fale bem brevemente sobre seu último emprego aqui: "></textarea>
-      </label>
-      <br>
-      <label for="cargo-input">Cargo:
-        <input type="text" name="cargo" id="cargo-input" placeholder="Digite seu cargo" maxlength="40" />
-      </label>
-      <br>
-      <label for="data-input">Data de início:
-        <input type="date" name="data" id="data-input" required/>
-      </label>
-    </fieldset>
-    <button type="reset">Limpar</button>
-    <button id="enviar" type="button">Enviar</button>
-  </form>
   <main>
+    <header>
+      <h1>Formulário</h1>
+    </header>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name-input" class="form-label">Nome:
+          <input type="text" name="name" id="name-input" placeholder="Digite seu nome" maxlength="40" />
+        </label>
+        <br />
+        <label for="email-input" class="form-label">E-mail:
+          <input type="email" name="email" id="email-input" placeholder="Digite seu e-mail" maxlength="50" />
+        </label>
+        <br />
+        <label for="input-cpf" class="form-label">CPF:
+          <input type="text" name="cpf" id="cpf-input" placeholder="Ex.: 000.000.000-00" maxlength="14" />
+        </label>
+        <br />
+        <label for="endereco-input" class="form-label">Endereço:
+          <input type="text" name="endereco" id="endereco-input" placeholder="Digite seu endereço" maxlength="200" />
+        </label>
+        <br>
+        <label for="cidade-input" class="form-label">Cidade:
+          <input type="text" name="cidade" id="cidade-input" placeholder="Digite sua cidade" maxlength="28" />
+        </label>
+        <br />
+        <label for="estado-input" class="form-label">Estado:
+          <select name="estado" id="estado-input" required></select>
+        </label>
+        <br />
+        <label for="house" class="form-check">Tipo:
+          <input name="house" type="radio" required>Casa
+          <input name="house" type="radio">Apartamento
+        </label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resumo-cv">Resumo do currículo:
+          <br>
+          <textarea name="resumo" id="resumo-cv" cols="30" rows="5" maxlength="1000"
+            placeholder="Fale bem brevemente sobre seu último emprego aqui: "></textarea>
+        </label>
+        <br>
+        <label for="cargo-input">Cargo:
+          <input type="text" name="cargo" id="cargo-input" placeholder="Digite seu cargo" maxlength="40" />
+        </label>
+        <br>
+        <label for="data-input">Data de início:
+          <input type="date" name="data" id="data-input" required />
+        </label>
+      </fieldset>
+      <button type="reset">Limpar</button>
+      <button id="enviar" type="button">Enviar</button>
+    </form>
     <div id="container-cv"></div>
   </main>
   <script src="script.js"></script>
 </body>
-
 </html>
