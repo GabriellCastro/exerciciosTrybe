@@ -17,32 +17,38 @@
       <fieldset>
         <legend>Dados Pessoais</legend>
         <label for="name-input" class="form-label">Nome:
+          <br>
           <input type="text" name="name" id="name-input" placeholder="Digite seu nome" maxlength="40" />
         </label>
         <br />
         <label for="email-input" class="form-label">E-mail:
+          <br>
           <input type="email" name="email" id="email-input" placeholder="Digite seu e-mail" maxlength="50" />
         </label>
         <br />
         <label for="input-cpf" class="form-label">CPF:
+          <br>
           <input type="text" name="cpf" id="cpf-input" placeholder="Ex.: 000.000.000-00" maxlength="14" />
         </label>
         <br />
         <label for="endereco-input" class="form-label">Endereço:
+          <br>
           <input type="text" name="endereco" id="endereco-input" placeholder="Digite seu endereço" maxlength="200" />
         </label>
         <br>
         <label for="cidade-input" class="form-label">Cidade:
+          <br>
           <input type="text" name="cidade" id="cidade-input" placeholder="Digite sua cidade" maxlength="28" />
         </label>
         <br />
         <label for="estado-input" class="form-label">Estado:
+          <br>
           <select name="estado" id="estado-input" required></select>
         </label>
         <br />
         <label for="house" class="form-check">Tipo:
-          <input name="house" type="radio" required>Casa
-          <input name="house" type="radio">Apartamento
+          <input name="house" value="casa" type="radio" required>Casa
+          <input name="house" value="apartamento" type="radio">Apartamento
         </label>
       </fieldset>
       <br>
@@ -65,7 +71,7 @@
       <button type="reset">Limpar</button>
       <button id="enviar" type="button">Enviar</button>
     </form>
-    <div id="container-cv"></div>
+    <div id="container-cv" class="container-cv"></div>
   </main>
   <script src="script.js"></script>
 </body>
