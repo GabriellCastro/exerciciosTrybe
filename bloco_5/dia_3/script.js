@@ -18,7 +18,6 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   }
 }
-
 createDaysOfTheWeek();
 
 //Exercício 1
@@ -79,12 +78,12 @@ createDezDaysList();
 
 //Exercício 2
 function holidays() {
-  const buttonHoliday = document.querySelector(".buttons-container");
+  const divDadHolidays = document.querySelector(".buttons-container");
   const createButton = document.createElement("button");
 
   createButton.id = "btn-holiday";
   createButton.innerText = "Feriados";
-  buttonHoliday.appendChild(createButton);
+  divDadHolidays.appendChild(createButton);
 }
 holidays("Feriados");
 
@@ -97,10 +96,79 @@ function clickHoliday() {
     for (let index = 0; index < clickHoliday.length; index += 1) {
       if (clickHoliday[index].style.backgroundColor === "green") {
         clickHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+        clickHoliday[index].style.color = "#777";
       } else {
         clickHoliday[index].style.backgroundColor = "green";
+        clickHoliday[index].style.color = "white";
       }
     }
   }
 }
 clickHoliday();
+
+//Exercício 4
+function fridays(str) {
+  const divDadFridays = document.querySelector(".buttons-container");
+  const createButton = document.createElement("button");
+
+  createButton.id = "btn-friday";
+  createButton.innerText = str;
+  divDadFridays.appendChild(createButton);
+}
+fridays("Sexta-feira");
+
+//Exercícios 5
+function clickFriday() {
+  const buttonEvent = document.querySelector("#btn-friday");
+  const clickFriday = document.querySelectorAll(".friday");
+  buttonEvent.addEventListener("click", backgroundFriday);
+  function backgroundFriday() {
+    for (let index = 0; index < clickFriday.length; index += 1) {
+      if (clickFriday[index].style.backgroundColor === "red") {
+        clickFriday[index].style.backgroundColor = "rgb(238,238,238)";
+        clickFriday[index].style.color = "#777";
+      } else {
+        clickFriday[index].style.backgroundColor = "red";
+        clickFriday[index].style.color = "white";
+      }
+    }
+  }
+}
+clickFriday();
+
+//Exercício 6
+function zoomEffectInput(event) {
+  event.target.style.transform = "scale(2)";
+  event.target.style.transition = "0.5s";
+}
+function zoomEffectExit(event) {
+  event.target.style.transform = "scale(1)";
+  event.target.style.transition = "0.5s";
+}
+function mouseZoomEffect() {
+  const day = document.querySelectorAll(".day");
+  for (let index = 0; index < day.length; index += 1) {
+    day[index].addEventListener("mouseover", zoomEffectInput);
+    day[index].addEventListener("mouseout", zoomEffectExit);
+  }
+}
+mouseZoomEffect();
+
+//Exercício 7
+function addTask(task) {
+  const spanTask = document.createElement("span");
+  const divTaskDad = document.querySelector(".my-tasks");
+  spanTask.innerText = task;
+  divTaskDad.appendChild(spanTask);
+}
+addTask("comida");
+
+//Exercício 8
+function colorTask(color) {
+  const addDivTask = document.createElement("div");
+  const divTask = document.querySelector(".my-task");
+  addDivTask.className = "task";
+  addDivTask.style.backgroundColor = color;
+  divTask.appendChild(addDivTask);
+}
+colorTask("black");
