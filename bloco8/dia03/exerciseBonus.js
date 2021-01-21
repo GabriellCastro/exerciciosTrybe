@@ -77,6 +77,6 @@ const estudantes = [
 //  para mostrar na tela um relatório que diz em qual matéria o estudante foi melhor. 
 //  Você usará tanto o map quanto, dentro dele, o reduce !
 
-
+const relatorioNota = estudantes.map((estudante) => estudante.nome).reduce((acc, curr) => acc.nota < curr.nota ?)
 console.log(bestsNotes());
 

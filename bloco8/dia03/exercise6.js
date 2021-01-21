@@ -16,7 +16,7 @@ const expected = [
 function studentAverage() {
   const studentMedia = students.map((student, index) => 
     ({name: student, average: grades[index].reduce((acc, element) => 
-      acc + element) / grades[index].length}))
+      acc + element) / grades[index].length}));
   return studentMedia;
 }
 
