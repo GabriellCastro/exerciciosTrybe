@@ -40,7 +40,7 @@ const imc = (peso, altura) => (peso / (altura * altura)).toFixed(2);
 const pacientInfor = [60, 1.7];
 console.log(imc(...pacientInfor));
 
-console.log('---------------- Exemplo Math.mas e Math.min --------------------');
+console.log('---------------- Exemplo Math.max e Math.min --------------------');
 const randomNumbers = [57, 55, 88, 90, 9, 3, 2, 1];
 console.log(Math.max(...randomNumbers)); // 90
 console.log(Math.min(...randomNumbers)); // 1

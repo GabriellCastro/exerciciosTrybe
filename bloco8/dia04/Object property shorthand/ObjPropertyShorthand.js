@@ -19,7 +19,7 @@ const newUser2 = (id, name, email) => {
   };
 };
 
-console.log(newUser(54, 'isabella', 'isabella@email.com')); 
+console.log(newUser2(54, 'isabella', 'isabella@email.com')); 
 // { id: 54, name: 'isabella', email: 'isabella@email.com' }
 
 // altere a função getPosition utilizando a property shorthand.

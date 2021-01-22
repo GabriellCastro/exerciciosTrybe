@@ -1,5 +1,5 @@
-function quantosParams(...args) {
-  console.log('parâmetros:', args)
+function quantosParams(...args1) {
+  console.log('parâmetros:', args1)
   return `Você passou ${args.length} parâmetros para a função.`;
 };
 
