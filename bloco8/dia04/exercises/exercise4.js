@@ -38,6 +38,7 @@ const filterPeople = (people) =>
   people.filter(({ bornIn, nationality }) => seculo20(bornIn) && austra(nationality));
 
 const filteredPeople = filterPeople(people);
+console.log(filteredPeople);
 
 assert.deepStrictEqual(filteredPeople[0], {
   name: "Nicole",
