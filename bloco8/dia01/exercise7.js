@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -71,3 +71,4 @@ function authorUnique() {
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
+console.log(authorUnique());
